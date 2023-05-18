@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+    --primaryFont: 'Roboto', sans-serif;
+    ;
+    --secondaryFont: 'Open Sans', sans-serif;
+    --primaryFontColor: #49A6E9;
+    --letter-spacing: 5px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F1f5f8;
+}
+
+header {
+    display: grid;
+    align-items: center;
+    height: 53px;
+    background-color: #fff;
+    box-shadow: 0px 5px 15px #00000033;
+    padding: 0px 20px 0px 20px;
+}
+
+.nav h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: .9rem;
+    color: var(--primaryFontColor);
+    font-weight: bold;
+    letter-spacing: var(--letter-spacing);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+    margin: 0px 18px 0px 0px;
+}
+
+ul li:last-child {
+    margin: 0px 0px 0px 0px;
+}
+
+ul li a {
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    color: #063251;
+    font-size: 1.15rem;
+    font-weight: bold;
+    letter-spacing: var(--letter-spacing);
+}
+
+ul li a:hover {
+    color: var(--primaryFontColor);
+}
+
+section {
+    display: grid;
+    place-items: center;
+    height: 90vh;
+    padding: 0px 10px 0px 10px;
+}
+
+.background-color {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.background-color .color {
+    background-color: #222;
+    padding: 18px 15px 18px 15px;
+    margin: 0px 0px 45px 0px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.color span {
+    font-size: 2.8rem;
+    font-family: var(--primaryFont);
+    letter-spacing: var(--letter-spacing);
+    color: #fff;
+}
+
+.color span ~ span {
+    color: var(--primaryFontColor);
+}
+
+.background-color button {
+    font-family: var(--primaryFont);
+    font-size: 1.15rem;
+    letter-spacing: var(--letter-spacing);
+    width: fit-content;
+    border: 3px solid #222;
+    background-color: transparent;
+    padding: 15px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .5s ease;
+    color: #222;
+}
+
+.background-color button:hover {
+    background-color: #222;
+    color: #fff;
+}
+
+@media screen and (max-width: 799px) {
+    .logo p {
+        font-size: .8rem;
+    }
+
+    .color span {
+        font-size: 2.2rem;
+    }
+}
+@media screen and (max-width: 424px) {
+    .color span {
+        font-size: 1.2rem;
+    }
+
+    .background-color button {
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+
